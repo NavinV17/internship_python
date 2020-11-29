@@ -1,0 +1,34 @@
+state_capitals = {"Chennai" : "TamilNadu",
+            "Banglore" : "Karnataka",
+            "Hyderabad" : "Telangana",
+            "Amaravati" : "AndhraPradesh",
+            "Thiruvananthapuram" : "Kerala",
+            "Mumbai" : "Maharastra"}
+
+nation_capitals = {"NewDelhi" : "India",
+                   "NewYork" : "America",
+                   "Beijing" : "China",
+                   "Moscow" : "Russia"}
+
+#Exercise 1
+capitals = {**state_capitals, **nation_capitals}
+print(capitals)
+
+#Exercise 2
+del capitals["Chennai"]
+print(capitals)
+
+#Exercise 3
+keys = ["Water", "Sun", "Dark"]
+values = ["fall", "shine", "knight"]
+words = dict(zip(keys, values))
+print(words)
+
+#Exercise 4
+car_company = {"Suzuki", "Hyundai", "Renault", "Bugatti"}
+print(len(car_company))
+
+#Exercise 5
+week = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
+working_days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"}
+print(week - working_days)
