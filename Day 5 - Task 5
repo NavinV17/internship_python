@@ -1,0 +1,16 @@
+#Exercise 1
+a=int(input('Enter the number1:'))
+b=int(input('Enter the number2:'))
+def operation(x,y):
+    print(x + y)
+    print(x - y)
+    print(x * y)
+    print(x / y)
+operation(a, b)
+
+
+#Exercise 2
+x=str(input('Enter the patient name:'))
+def covid(patient_name, body_temparature=98):
+    print('Patient name is:', patient_name , ',Body Temperature:', body_temparature)
+covid(x)
