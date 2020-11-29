@@ -1,0 +1,2 @@
+challenge = "#GobackCorona"
+print(challenge[1:])
