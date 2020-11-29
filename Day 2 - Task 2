@@ -1,0 +1,20 @@
+#Day2 task
+
+#Exercise 1
+a = b = c = 20
+print(a / 10)
+print(b * 50)
+print(c + 60)
+
+#Exercise 2
+Website = "LOTIN"
+Website = Website.replace(Website[2],'G')
+print(Website)
+
+#Exercise 3
+a = 15
+b = 20.20
+a = float(a)
+print(a)
+b = int(b)
+print(b)
