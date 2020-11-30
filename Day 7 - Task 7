@@ -1,0 +1,22 @@
+#Exercise 1
+import listimport
+print("Actual list: ", listimport.days)
+listimport.days[6] = "Sunday"
+print("After value changed: ", listimport.days)
+
+#Exercise 2
+import pandas as pd
+df = pd.DataFrame({
+    "State": ['Andhra Pradesh', 'Maharashtra', 'Karnataka', 'Kerala', 'Tamil Nadu'],
+    "Capital": ['Hyderabad', 'Mumbai', 'Bengaluru', 'Trivandrum', 'Chennai'],
+})
+print(df)
+
+#Exercise 3
+import random
+x = random.random() * 100
+print(int(x))
+
+#Exercise 4
+import sys
+print(sys.path)
