@@ -1,0 +1,89 @@
+#Exercise 1
+#Zero Division Error
+try:
+    x = 0
+    y = 0
+    z = x / y
+    print(z)
+except ZeroDivisionError:
+    print('Cannot divide by zero')
+
+#Name Error
+try:
+    print (ans)
+except NameError:
+    print ("NameError: name 'ans' is not defined")
+else:
+    print ("Success, no error!")
+
+#Index Error
+try:
+    a = ['a', 'b', 'c']
+    print (a[4])
+except LookupError:
+    print ("Index Error Exception Raised, list index out of range")
+else:
+    print ("Success, no error!")
+
+#Type Error
+try:
+    a = 5
+    b = "DataCamp"
+    c = a + b
+except TypeError:
+    print ('TypeError Exception Raised')
+else:
+    print ('Success, no error!')
+
+#OverFlow Error
+try:
+    import math
+    print(math.exp(1000))
+except OverflowError:
+        print ("OverFlow Exception Raised.")
+else:
+    print ("Success, no error!")
+
+#Exercise 2
+def calculator(a,b):
+    try:
+        val=int(input("What you want to do?\n1.add\n2.sub\n3.divide\n4.multiplication\nEnter your choice \t"))
+        if val==1:
+          print(f"The sum of a and b :{a+b}")
+        elif val==2:
+          print(f"The difference of a and b:{a-b}")
+        elif val==3:
+          print(f"The division of a and b:{a//b}")
+        elif val==4:
+          print(f"The multiplication of a and b:{a*b}")
+        else:
+          print("invalid")
+    except ZeroDivisionError:
+        print("Divisor should not be 0")
+
+try:
+    a=int(input("Enter the a value (calculator):"))#Enter the value of a
+    b=int(input("Enter the b value (calculator):")) #Enter the value of b
+    calculator(a, b)
+except ValueError:
+    print("Enter a valid number")
+except :
+    print("something went wrong")
+
+#Exercise 3
+try:
+    print (ans)
+except NameError:
+    print ("NameError: name 'ans' is not defined")
+else:
+    print ("Success, no error!")
+
+#Exercise 4
+# Whenever there is no chance for the lines in a code to result in any error due to user input or predefined inputs,a try-except block is not necessary"""
+
+#Exercise 5
+try:
+    x = int(input('Enter the number'))
+    print('Number: ',x)
+except ValueError:
+    print('Please enter number!')
