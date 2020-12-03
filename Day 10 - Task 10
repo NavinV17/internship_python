@@ -1,3 +1,4 @@
+#Exercise 1
 import re
 string = input("Enter a string:")
 if (re.match('^[a-zA-Z0-9]*$', string)):
