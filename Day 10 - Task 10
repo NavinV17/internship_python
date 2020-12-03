@@ -32,4 +32,4 @@ print("List contains:", values)
 print("Words with only uppercase letters:", end=' ')
 for i in values:
     if (re.match('[A-Z]*$', i)):
-        print(i, end=' ')
+        print(i, end=' ') 
