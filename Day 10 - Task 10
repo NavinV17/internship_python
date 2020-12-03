@@ -1,0 +1,34 @@
+import re
+string = input("Enter a string:")
+if (re.match('^[a-zA-Z0-9]*$', string)):
+    print("The string doesnt have any special characters!")
+else:
+    print("The string has special characters!")
+
+#Exercise 2
+values = ['sun', 'tab', 'above', 'bat', 'author']
+print("List contains:", values)
+print("Words in the list has 'ab':", end=' ')
+for i in values:
+    if (re.search('ab', i)):
+        print(i, end=' ')
+
+#Exercise 3
+string = input("Enter a word/sentence:")
+if (re.search('[0-9]$', string)):
+    print("The string contains numbers at the end!")
+else:
+    print("The string does not have any numbers at the end!")
+
+#Exercise 4
+string = input("Enter the string:")
+x = re.findall('[0-9]{1,3}', string)
+print(x)
+
+#Exercise 5
+values = ['sun', 'TAB', 'above', 'BAT', 'Author']
+print("List contains:", values)
+print("Words with only uppercase letters:", end=' ')
+for i in values:
+    if (re.match('[A-Z]*$', i)):
+        print(i, end=' ')
