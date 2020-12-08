@@ -1,0 +1,27 @@
+#Exercise 1
+#Task12.py
+x={"name":"Navin"
+   ,"middlename":Kumar,
+   "age":22,
+   "subjects":["WebApplication","Python","Cloud Computong"],
+   "marks":{"WA":87,"PY":72,"CC":69},
+   "married":False,"percentage":76,
+   "favourites":("Listening Music","Exercise","Playing Cricket")
+   }
+
+
+#db.py
+import sqlite3
+import Task12
+import json
+
+conn = sqlite3.connect('Task12.db')
+print("Database Opened");
+c=conn.cursor()
+c.execute('''CREATE TABLE INFORMATION(data json);''')
+print("Table created successfully");
+c.execute('''INSERT INTO INFORMATION VALUES(?)''',(json.dumps(Task12.x),))
+c.execute('''SELECT * FROM INFORMATION''')
+print(c.fetchall())
+conn.commit()
+c.close()
